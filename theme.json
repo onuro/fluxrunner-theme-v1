@@ -121,24 +121,7 @@
 					"size": "clamp(28px, 32px, 35px)",
 					"slug": "large"
 				}
-			],
-			"lineHeights": [
-                {
-                    "name": "Small Line Height",
-                    "slug": "small",
-                    "value": "1.5"
-                },
-                {
-                    "name": "Medium Line Height",
-                    "slug": "medium",
-                    "value": "1.6"
-                },
-                {
-                    "name": "Large Line Height",
-                    "slug": "large",
-                    "value": "1.7"
-                }
-            ]
+			]
 		},
 		"useRootPaddingAwareAlignments": true
 	},
@@ -175,10 +158,11 @@
 			}
 		},
 		"spacing": {
+			"blockGap": "0px",
 			"padding": {
 				"bottom": "0px",
-				"left": "160px",
-				"right": "160px",
+				"left": "16px",
+				"right": "16px",
 				"top": "0px"
 			}
 		},

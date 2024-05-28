@@ -139,6 +139,9 @@ h4 {
     left: -8px;
 }
 
+.hr-star{
+  display: inline-flex;
+}
 
 :where(.wp-site-blocks) > * {
     margin-block-start: 0;
@@ -180,6 +183,7 @@ h4 {
 .faq-accordion h4 a{
     display: block;
     text-decoration: none;
+    background: url(assets/plus.svg) no-repeat center right;
 }
 .faq-accordion .active h4{
     color:#F7F7F8;
@@ -189,6 +193,7 @@ h4 {
 }
 .faq-accordion .active h4 a{
     color: #fff;
+    background: url(assets/minus.svg) no-repeat center right;
 }
 
 .faq-accordion .wp-block-group.is-layout-flow {
@@ -219,7 +224,7 @@ h4 {
 }
 
 .data-wrap.title{
-    background: linear-gradient(90deg, #429CF0 0%, #555BF1 100%);
+    background: linear-gradient(179deg, #429CF0 0%, #555BF1 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text; /* For non-webkit browsers */
@@ -239,7 +244,37 @@ h4 {
 /*Data Table*/
 
 
+.subs-wrap{
+    position: relative;
+}
+.subs-wrap .union-large{position: absolute;right: -100px;top: -100px;}
+.subs-wrap .union-small{position: absolute;left: 200px;top: -100px;}
+.subs-wrap .wp-small-union{position: absolute;left: -75px;top: 100px;z-index: 11;}
 
 .subscription-block{
     padding: 177px 20px;
+    box-shadow: inset 0px 0px 12px #3b42ed80;
+    border: 1px solid #555BF1;
+    position: relative;
+    z-index: 10;
+    background:url(assets/curve-b.svg) no-repeat bottom center #070713;
 }
+
+
+.wp-block-separator{
+    border-top: 1px solid #14142A;
+    width: 100%;
+}
+
+
+.footer-copyright a{
+    background: linear-gradient(90deg, #429CF0 0%, #555BF1 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+.footer-copyright a:hover{background:  #555BF1;background-clip: text;}
+
+
+.footer-social{gap:48px;}
+.footer-social svg{height: 18px;}
