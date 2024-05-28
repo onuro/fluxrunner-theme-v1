@@ -1,0 +1,245 @@
+/*
+Theme Name: Flex Runner
+Theme URI: https://fluxrunner.com/
+Author: FluxRunner
+Author URI: https://fluxrunner.com/
+Description: Welcome to the new home for your WordPress sites. Enjoy lightning-fast website speed, automatic updates, and enterprise-level security.
+Requires at least: 6.0
+Tested up to: 6.5
+Requires PHP: 5.7
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: flex-runner
+Tags: portfolio, one-column, full-site-editing, 
+*/
+
+
+/* Body Styles */
+
+
+:root{
+    --wp--preset--font-size--small: 14px;
+}
+body {
+    font-weight: 400;
+    line-height: clamp(25.6px, 26px, 28.8px);
+    font-size: clamp(16px, 17px, 18px);
+}
+
+
+
+
+
+h1,h2,h3,h4,h5,h6,p{margin:0;font-weight: 400;}
+
+
+/* H1 Styles */
+h1 {
+    
+    letter-spacing: -2px;
+    line-height: clamp(40px, 3vw + 37px, 75.9px);
+    font-size: clamp(40px, 5vw + 34px, 69px);
+}
+
+/* H2 Styles */
+h2 {
+    font-weight: 400;
+    letter-spacing: -0.3px;
+    line-height: clamp(32px, 0.5vw + 31.3px, 36.8px);
+    font-size: clamp(20px, 1.5vw + 18.5px, 23px);
+    background: linear-gradient(90deg, #429CF0 0%, #555BF1 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text; /* For non-webkit browsers */
+    margin:16px 0;
+}
+
+/* H3 Styles */
+h3 {
+    font-weight: 400;
+    letter-spacing: -1px;
+    line-height: clamp(39.2px, 1.6vw + 37.6px, 49px);
+    font-size: clamp(28px, 2.1vw + 26.8px, 35px);
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+/* H4 Styles */
+h4 {
+    font-weight: 400;
+    letter-spacing: -0.2px;
+    line-height: clamp(22.4px, 0.6vw + 21.8px, 25.3px);
+    font-size: clamp(16px, 0.9vw + 15.5px, 18px);
+}
+
+
+
+
+
+/*Logo Carousel Section*/
+.logo-carousel{
+    display: flex;
+    justify-content: space-between;
+    gap: 88px;
+}
+
+.info-title{
+    font-size: 14px;
+    line-height: 22.4px;
+    border:1px solid #14142A;
+    padding: 8px 14px;
+    text-transform: uppercase;
+    display: inline-flex;
+    border-radius: 8px;
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    gap: 20px;
+    margin: 0 auto;
+}
+
+.grid-item {
+    border-radius: 5px;
+    text-align: center;
+    padding: 60px 40px;
+    margin:0;
+}
+.grid-item img{height: 53px;}
+
+
+
+/*Grid Border*/
+.border-one{
+    border: 1px solid #14142A;
+    background: url(assets/border-rec.svg) no-repeat bottom center;
+    border-radius: 12px;
+}
+
+
+.progress {
+    width: 1px !important;
+    background: #14142A;
+    min-height: 100px;
+    margin-left: 40px;
+    margin-top: 32px;
+    position: relative;
+}
+.progress:after {
+    content: "";
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    background: url(assets/star.svg);
+    position: absolute;
+    bottom: -32px;
+    left: -8px;
+}
+
+
+:where(.wp-site-blocks) > * {
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+
+.map-wrap{
+    padding: 40px 56px 72px 56px;
+    text-align: center;
+}
+
+
+.nextgen-web{
+    padding:40px 24px 64px 24px;
+}
+
+
+
+
+/*FAQS*/
+.faq-accordion {
+    border: 1px solid #14142A;
+    border-radius: 12px;
+    overflow: hidden;
+}
+.faq-accordion .wp-block-group-is-layout-flex{
+    padding: 20px 28px;
+    border-bottom: 1px solid #14142A;
+}
+.faq-accordion .wp-block-group-is-layout-flex:last-child{
+    border-bottom: none;
+}
+
+.faq-accordion h4{
+    color:#747490;
+    width: 100%;
+}
+.faq-accordion h4 a{
+    display: block;
+    text-decoration: none;
+}
+.faq-accordion .active h4{
+    color:#F7F7F8;
+}
+.faq-accordion .active {
+    box-shadow: inset 0px 0px 12px #3b42ed80;
+}
+.faq-accordion .active h4 a{
+    color: #fff;
+}
+
+.faq-accordion .wp-block-group.is-layout-flow {
+    overflow: hidden;
+    font-size: 14px;
+    line-height: 22.4px;
+}
+.faq-accordion .wp-block-group p{
+    margin: 20px 0;
+   }
+/*FAQS*/
+
+
+
+
+/*Data Table*/
+.data-btn a{
+    padding: 7px 16px;
+    font-family: var(--wp--preset--font-family--n-27);
+    color:#747490;
+    border:1px solid #747490;
+    background: none;
+    margin:0 8px;
+}
+.data-btn a:hover,.data-btn .active a{
+    color:#fff;
+    border:1px solid #fff;
+}
+
+.data-wrap.title{
+    background: linear-gradient(90deg, #429CF0 0%, #555BF1 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text; /* For non-webkit browsers */
+    border-bottom: 1px solid #555BF1 !important;
+}
+.cost-tab{
+    padding: 48px 0;
+}
+.data-table{
+    padding:24px 48px;
+    width: 100%;
+}
+.data-table .data-wrap{
+    border-bottom: 1px solid #14142A;
+    padding:16px 0;
+}
+/*Data Table*/
+
+
+
+.subscription-block{
+    padding: 177px 20px;
+}
