@@ -23,8 +23,8 @@ Tags: portfolio, one-column, full-site-editing,
 }
 body {
     font-weight: 400;
-    line-height: clamp(25.6px, 26px, 28.8px);
-    font-size: clamp(16px, 17px, 18px);
+    line-height: clamp(25.6px, 3vw, 28.8px);
+    font-size: clamp(16px, 1.5vw, 18px);
 }
 
 
@@ -74,15 +74,58 @@ h4 {
 }
 
 
-
-
+/*hero header*/
+.hero-wrap{
+    padding:168px 0;
+    animation: slideBackground 0.75s ease-out;
+}
+.hero-text{
+    margin:80px 0;
+}
+/*hero header*/
 
 /*Logo Carousel Section*/
+.trusted-by{
+    padding: 50px 16px;
+}
 .logo-carousel{
     display: flex;
     justify-content: space-between;
     gap: 88px;
 }
+.logo-carousel {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+}
+
+.logo-carousel figure {
+    flex: 0 0 auto;
+    max-width: 100px;
+    margin: 0 45px;
+    transition: transform 0.5s ease;
+    display: flex;
+    align-items: center;
+}
+
+.logo-carousel img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.logo-carousel-inner {
+    display: flex;
+    animation: scroll 10s linear infinite;
+}
+
+
+
+
+
+
+
+
 
 .info-title{
     font-size: 14px;
@@ -92,6 +135,8 @@ h4 {
     text-transform: uppercase;
     display: inline-flex;
     border-radius: 8px;
+    width: 110px;
+    justify-content: center;
 }
 
 
@@ -107,6 +152,8 @@ h4 {
     text-align: center;
     padding: 60px 40px;
     margin:0;
+    width: 100%;
+    gap: 24px;
 }
 .grid-item img{height: 53px;}
 
@@ -123,7 +170,7 @@ h4 {
 .progress {
     width: 1px !important;
     background: #14142A;
-    min-height: 100px;
+    min-height: 50px;
     margin-left: 40px;
     margin-top: 32px;
     position: relative;
@@ -137,6 +184,9 @@ h4 {
     position: absolute;
     bottom: -32px;
     left: -8px;
+}
+.progress.mobile{
+    display: none;
 }
 
 .hr-star{
@@ -252,7 +302,7 @@ h4 {
 .subs-wrap .wp-small-union{position: absolute;left: -75px;top: 100px;z-index: 11;}
 
 .subscription-block{
-    padding: 177px 20px;
+    padding: 177px 24px;
     box-shadow: inset 0px 0px 12px #3b42ed80;
     border: 1px solid #555BF1;
     position: relative;
@@ -278,3 +328,132 @@ h4 {
 
 .footer-social{gap:48px;}
 .footer-social svg{height: 18px;}
+
+
+/*micro interaction animation*/
+@keyframes slideBackground {
+    from {
+        background-position: 120% 0%;
+    }
+    to {
+        background-position: 100% 0%;
+    }
+}
+
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+
+
+/*responsive media query*/
+
+/*extra large*/
+@media (max-width: 1420px) {
+    .subs-wrap .union-large{
+       right: -50px;
+    }
+    .subs-wrap .wp-small-union{
+        left: -36px;
+    }
+
+}
+
+/*large*/
+@media (max-width: 1320px) {
+    .subs-wrap .union-large{
+       right: -14px;
+    }
+    .subs-wrap .union-large{
+        right: -14px;
+    }
+
+}
+
+/*medium*/
+@media (max-width: 1120px) {
+    /*hero header*/
+        .hero-wrap{
+            padding:84px 0;
+        }
+    /*hero header*/
+
+    
+}
+
+/*medium*/
+@media (max-width: 782px) {
+    .progress{
+        display: none;
+    }
+    .progress.mobile{
+        display: inline-block;
+    }
+    .progress.intro{
+        display: inline-block;
+    }
+
+    .grid-container {
+        grid-template-columns:1fr;
+    }
+    .grid-item {
+        padding: 32px 24px 35px 24px;
+        gap: 17px;
+    }
+    .faq-accordion .wp-block-group.is-layout-flow{
+        line-height: 20.8px;
+        font-size: 13px;
+    }
+    .nextgen-web{
+        padding:32px 24px 42px 24px;
+    }
+    .data-table{
+        padding:20px;
+    }
+    .cost-tab {
+        padding: 24px 0;
+    }
+    .subscription-block{
+        padding: 32px 24px;
+    }
+}
+
+/*small*/
+@media (max-width: 600px) {
+        .hero-wrap{
+            padding:24px 0;
+        }
+        .hero-text{
+            margin:73px 0 24px 0;
+        }
+
+        .trusted-by{
+            padding: 30px 0 30px 16px;
+        }
+        .subs-wrap .union-small{
+            left: 100px;
+            top: -90px;
+        }
+        .subs-wrap .union-large{
+            width: 145px;
+            top: -50px;
+        }
+        .subs-wrap .wp-small-union{
+            width: 75px;height: 75px;left: 0;top: -40px;
+        }
+        .footer-copy{
+            align-content: center;
+            flex-direction: column;
+            gap: 40px;
+        }
+    
+}
+
+
+

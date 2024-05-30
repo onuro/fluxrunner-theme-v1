@@ -17,6 +17,9 @@ function mytheme_enqueue_scripts() {
 
     // Enqueue the data update script
     wp_enqueue_script('data-update-script', get_template_directory_uri() . '/assets/js/data-update.js', array(), null, true);
+
+    // Enqueue the data update script
+    wp_enqueue_script('carousel-script', get_template_directory_uri() . '/assets/js/carousel.js', array(), null, true);
 }
 add_action('wp_enqueue_scripts', 'mytheme_enqueue_scripts');
 ?>
