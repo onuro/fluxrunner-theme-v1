@@ -428,6 +428,9 @@ h4 {
 @media (max-width: 600px) {
         .hero-wrap{
             padding:24px 0;
+            background-position: 150% -5% !important;
+            background-repeat: no-repeat !important;
+            background-size: 70% !important;
         }
         .hero-text{
             margin:73px 0 24px 0;
