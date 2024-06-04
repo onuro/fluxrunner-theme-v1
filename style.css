@@ -73,6 +73,14 @@ h4 {
     font-size: clamp(16px, 0.9vw + 15.5px, 18px);
 }
 
+/* H4 Styles */
+h5 {
+    font-weight: 400;
+    letter-spacing: -0.2px;
+    line-height: 1em;
+    font-size: clamp(15px, 0.85vw + 15.5px, 16px);
+}
+
 
 /*hero header*/
 .hero-wrap{
@@ -82,7 +90,38 @@ h4 {
 .hero-text{
     margin:80px 0;
 }
+
+
+.newsletter-mail h5{
+    margin-bottom: 10px;
+}
+.newsletter-mail input{
+    border-radius: 8px;
+    border:none;
+    padding: 16.5px;
+    font-size: 1rem;
+    color: #fff;
+}
+.newsletter-mail input[type="email"]{
+    background: #161627;
+}
+.newsletter-mail input[type="email"]::placeholder {
+    color:#74748b;
+}
+.newsletter-mail input[type="submit"]{
+    background: #3B42ED;
+    margin-left: 10px;
+}
+.newsletter-mail input[type="submit"]:hover{
+    background: #172299;
+}
+
 /*hero header*/
+
+
+
+
+
 
 /*Logo Carousel Section*/
 .trusted-by{
@@ -310,6 +349,12 @@ h4 {
     background:url(assets/curve-b.svg) no-repeat bottom center #070713;
 }
 
+.subscription-block .wp-block-heading{
+    border-bottom: 1px solid #14142A;
+    padding-block: 40px;
+}
+
+
 
 .wp-block-separator{
     border-top: 1px solid #14142A;
@@ -328,6 +373,9 @@ h4 {
 
 .footer-social{gap:48px;}
 .footer-social svg{height: 18px;}
+
+
+
 
 
 /*micro interaction animation*/
@@ -421,6 +469,21 @@ h4 {
     }
     .subscription-block{
         padding: 32px 24px;
+    }
+    .subscription-block .wp-block-heading{
+        font-size: 34px;text-align: center;
+        width: 100%;
+        padding: 0 0 24px 0;
+    }
+    .newsletter-mail h5{
+        margin-bottom: 0;
+    }
+    .newsletter-mail input[type="email"]{
+        width: calc(100% - 33PX);
+    }
+    .newsletter-mail input{
+        width: 100%;
+        margin:16px 0 0 0 !important;
     }
 }
 
