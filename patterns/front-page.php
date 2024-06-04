@@ -481,9 +481,9 @@
 <h1 class="wp-block-heading"><?php echo __('Ready to roll?', 'flex-runner');?></h1>
 <!-- /wp:heading -->
 
-<!-- wp:separator -->
-<hr class="wp-block-separator has-alpha-channel-opacity"/>
-<!-- /wp:separator --></div>
+<!-- wp:group {"metadata":{"name":""},"className":"newsletter-mail","layout":{"type":"constrained"}} -->
+<div class="wp-block-group newsletter-mail"><!-- wp:mailchimp-for-wp/form {"id":1221} /--></div>
+<!-- /wp:group --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></section>
 <!-- /wp:group -->

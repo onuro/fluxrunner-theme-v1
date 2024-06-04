@@ -25,10 +25,8 @@
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
-<!-- wp:group {"layout":{"type":"constrained"}} -->
-<div class="wp-block-group"><!-- wp:paragraph -->
-<p><?php echo __('Email', 'flex-runner');?></p>
-<!-- /wp:paragraph --></div>
+<!-- wp:group {"className":"newsletter-mail","layout":{"type":"constrained"}} -->
+<div class="wp-block-group newsletter-mail"><!-- wp:mailchimp-for-wp/form {"id":1221} /--></div>
 <!-- /wp:group --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></section>
