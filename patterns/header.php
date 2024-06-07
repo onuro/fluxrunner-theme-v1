@@ -26,7 +26,25 @@
 <!-- /wp:group -->
 
 <!-- wp:group {"className":"newsletter-mail","layout":{"type":"constrained"}} -->
-<div class="wp-block-group newsletter-mail"><!-- wp:mailchimp-for-wp/form {"id":1221} /--></div>
+<div class="wp-block-group newsletter-mail"><!-- wp:group {"layout":{"type":"flex","orientation":"vertical"}} -->
+<div class="wp-block-group"><!-- wp:heading {"level":5} -->
+<h5 class="wp-block-heading"><?php echo __('Email', 'flex-runner');?></h5>
+<!-- /wp:heading -->
+
+<!-- wp:html -->
+<!-- MailerLite Universal -->
+<script>
+    (function(w,d,e,u,f,l,n){w[f]=w[f]||function(){(w[f].q=w[f].q||[])
+    .push(arguments);},l=d.createElement(e),l.async=1,l.src=u,
+    n=d.getElementsByTagName(e)[0],n.parentNode.insertBefore(l,n);})
+    (window,document,'script','https://assets.mailerlite.com/js/universal.js','ml');
+    ml('account', '976970');
+</script>
+<!-- End MailerLite Universal -->
+
+<div class="ml-embedded" data-form="RPvDn8"></div>
+<!-- /wp:html --></div>
+<!-- /wp:group --></div>
 <!-- /wp:group --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></section>

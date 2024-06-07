@@ -79,6 +79,7 @@ h5 {
     letter-spacing: -0.2px;
     line-height: 1em;
     font-size: clamp(15px, 0.85vw + 15.5px, 16px);
+    margin-bottom: 10px !important;
 }
 
 
@@ -92,9 +93,7 @@ h5 {
 }
 
 
-.newsletter-mail h5{
-    margin-bottom: 10px;
-}
+
 .newsletter-mail input{
     border-radius: 8px;
     border:none;
@@ -102,19 +101,26 @@ h5 {
     font-size: 1rem;
     color: #fff;
 }
-.newsletter-mail input[type="email"]{
-    background: #161627;
+.newsletter-mail input.form-control {
+    background: #161627 !important;
+    border: none !important;
+    padding: 17px !important;
+    margin:0 !important;
 }
-.newsletter-mail input[type="email"]::placeholder {
-    color:#74748b;
+.newsletter-mail input.form-control::placeholder {
+    color:#74748b !important;
 }
-.newsletter-mail input[type="submit"]{
-    background: #3B42ED;
-    margin-left: 10px;
+.newsletter-mail .ml-embedded #mlb2-15429635.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow button,
+.newsletter-mail #mlb2-15429635 .ml-mobileButton-horizontal button{
+    background: #3B42ED !important;
+   padding: 16px !important;
 }
-.newsletter-mail input[type="submit"]:hover{
+.newsletter-mail .ml-embedded #mlb2-15429635.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow button:hover{
     background: #172299;
 }
+.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody{padding:0 !important;}
+.ml-form-formContent.horozintalForm .ml-form-horizontalRow .ml-input-horizontal{width: 65% !important;}
+.ml-form-formContent.horozintalForm .ml-form-horizontalRow .ml-button-horizontal{width: 35% !important;}
 
 /*hero header*/
 
@@ -349,7 +355,7 @@ h5 {
     background:url(assets/curve-b.svg) no-repeat bottom center #070713;
 }
 
-.subscription-block .wp-block-heading{
+.subscription-block h1.wp-block-heading{
     border-bottom: 1px solid #14142A;
     padding-block: 40px;
 }
@@ -474,9 +480,6 @@ h5 {
         font-size: 34px;text-align: center;
         width: 100%;
         padding: 0 0 24px 0;
-    }
-    .newsletter-mail h5{
-        margin-bottom: 0;
     }
     .newsletter-mail input[type="email"]{
         width: calc(100% - 33PX);
